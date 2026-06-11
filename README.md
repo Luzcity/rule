@@ -1,14 +1,17 @@
-# LuzSity rule docs
+# LuzCity rule docs
 
-LuzSity向けのルールと参加ガイドを、GitHub Pagesでそのまま公開できる静的サイトとしてまとめたリポジトリです。
+LuzCity向けのルールと参加ガイドを、GitHub Pagesでそのまま公開できる静的サイトとしてまとめたリポジトリです。
 
 ## Files
 
-- `index.html`: トップページ
+- `index.html`: メイン画面（サーバールール全文）
+- `rule.txt`: サーバールールのテキスト原本
 - `styles.css`: 共通スタイル
-- `pages/basic-rules.html`: 基本ルール
-- `pages/crime-rules.html`: 犯罪・抗争ルール
-- `pages/public-service-rules.html`: 警察・EMS方針
+- `pages/pd-rules.html`: PDルール
+- `pages/ems-rules.html`: EMSルール
+- `pages/mechanic-rules.html`: メカニックルール
+- `pages/gang-rules.html`: ギャングルール
+- `pages/ban-rules.html`: BAN・処罰
 
 ## Publish
 
