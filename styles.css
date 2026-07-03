@@ -190,8 +190,19 @@ a {
 .header-actions {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 0.8rem;
   margin-top: 1.4rem;
+}
+
+.restart-time {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.restart-time strong {
+  color: var(--accent-strong);
 }
 
 .button {
