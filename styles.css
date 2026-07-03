@@ -306,6 +306,11 @@ a {
   border-radius: var(--radius-md);
 }
 
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
 .meta-table th,
 .meta-table td {
   padding: 0.9rem 1rem;
@@ -321,6 +326,24 @@ a {
 
 .meta-table td {
   color: var(--muted);
+}
+
+.crime-table {
+  min-width: 680px;
+}
+
+.crime-table thead th {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+}
+
+.crime-table th {
+  width: auto;
+}
+
+.crime-table tbody th,
+.crime-table td {
+  white-space: nowrap;
 }
 
 code {
