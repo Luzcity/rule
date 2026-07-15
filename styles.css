@@ -288,6 +288,17 @@ a {
   font-size: 1.15rem;
 }
 
+.graphics-rules {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.graphics-rules p,
+.graphics-rules ul {
+  margin: 0;
+}
+
 .topbar {
   display: flex;
   align-items: center;
