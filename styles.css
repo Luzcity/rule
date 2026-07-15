@@ -283,6 +283,11 @@ a {
   font-weight: 700;
 }
 
+.rule-subheading {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
 .topbar {
   display: flex;
   align-items: center;
