@@ -11,6 +11,7 @@
   --accent-soft: #dff0e8;
   --accent-strong: #084d3c;
   --code: #4d3323;
+  --danger: #b3261e;
   --shadow: 0 20px 60px rgba(62, 44, 24, 0.12);
   --radius-xl: 24px;
   --radius-lg: 18px;
@@ -275,6 +276,11 @@ a {
 
 .content-section + .content-section {
   margin-top: 1rem;
+}
+
+.rule-prohibited {
+  color: var(--danger);
+  font-weight: 700;
 }
 
 .topbar {
