@@ -504,15 +504,12 @@ a.card:focus-visible {
   color: var(--text);
 }
 
-/* ---------- rules（信号機セマンティクス） ---------- */
+/* ---------- rules ---------- */
 
 .rules {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.45rem;
 }
 
 .rules + .rules,
@@ -523,60 +520,12 @@ p + .rules {
 }
 
 .rule {
-  padding: 0.6rem 0.95rem;
-  border-left: 3px solid var(--line);
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-  background: var(--surface-soft);
+  padding: 0.35rem 0 0.35rem 1rem;
+  border-left: 3px solid var(--line-soft);
 }
 
 .rule.ban {
   border-left-color: var(--ban);
-}
-
-.rule.warn {
-  border-left-color: var(--amber);
-}
-
-.rule.ok {
-  border-left-color: var(--ok);
-}
-
-.rule.app {
-  border-left-color: var(--app);
-}
-
-.tag {
-  display: inline-block;
-  margin-right: 0.55em;
-  padding: 0.05rem 0.42rem;
-  border-radius: 4px;
-  font-size: 0.68rem;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 1.6;
-  vertical-align: 0.12em;
-  letter-spacing: 0.06em;
-  white-space: nowrap;
-}
-
-.ban .tag {
-  background: var(--ban-soft);
-  color: var(--ban);
-}
-
-.warn .tag {
-  background: var(--amber-soft);
-  color: var(--amber-strong);
-}
-
-.ok .tag {
-  background: var(--ok-soft);
-  color: var(--ok);
-}
-
-.app .tag {
-  background: var(--app-soft);
-  color: var(--app);
 }
 
 /* ---------- callout ---------- */
