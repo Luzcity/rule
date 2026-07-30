@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../styles.css" />
@@ -19,31 +19,35 @@
   <body>
     <div class="shell">
       <aside class="sidebar">
-        <a class="brand" href="../index.html">
-          <span class="brand-mark">LC</span>
-          <span class="brand-text">
-            <strong>LuzCity Rules</strong>
-            <small>Rule Handbook</small>
-          </span>
-        </a>
-
+        <div class="sidebar-head">
+          <a class="brand" href="../index.html">
+            <span class="brand-mark">LC</span>
+            <span class="brand-text">
+              <strong>LuzCity Rules</strong>
+              <small>Rule Handbook</small>
+            </span>
+          </a>
+          <label class="nav-toggle" for="nav-open">メニュー</label>
+        </div>
+        <input type="checkbox" id="nav-open" class="nav-state" />
         <nav class="sidebar-nav" aria-label="Primary">
           <p class="nav-label">Main</p>
           <a class="nav-link" href="../index.html">サーバールール</a>
-          <p class="nav-label">Category</p>
+          <p class="nav-label">Jobs</p>
           <a class="nav-link" href="pd-rules.html">PDルール</a>
           <a class="nav-link" href="ems-rules.html">EMSルール</a>
           <a class="nav-link" href="mechanic-rules.html">メカニックルール</a>
           <a class="nav-link" href="restaurant-rules.html">飲食店ルール</a>
+          <p class="nav-label">Crime</p>
           <a class="nav-link" href="hangure-rules.html">半グレルール</a>
           <a class="nav-link" href="gang-rules.html">ギャングルール</a>
           <a class="nav-link" href="crime-types-rules.html">犯罪種類＆可能人数</a>
+          <p class="nav-label">Support</p>
           <a class="nav-link" href="crash-rules.html">シーン中のクラッシュについて</a>
           <a class="nav-link is-active" href="ban-rules.html">BAN・処罰</a>
         </nav>
-
-        <div class="sidebar-card">
-          <p class="card-title">処罰について</p>
+        <div class="sidebar-note">
+          <strong>処罰について</strong>
           <p>最終的な判断はすべて運営が行います。他サーバーの基準や慣習は判断材料になりません。</p>
         </div>
       </aside>
@@ -51,81 +55,83 @@
       <main class="content">
         <div class="topbar">
           <a class="crumb" href="../index.html">← トップへ戻る</a>
-          <span class="eyebrow">Ban &amp; Penalty</span>
+          <p class="eyebrow">Ban &amp; Penalty</p>
         </div>
 
-        <section class="page-header content-section">
+        <header class="page-header">
           <h1>BAN・処罰</h1>
           <p class="lead">
             ルール違反に対する処罰の流れと基準をまとめています。
             違反の内容・悪質さ・回数に応じて、運営が総合的に判断します。
           </p>
-        </section>
+        </header>
 
-        <section class="panel content-section">
+        <section class="rule-section">
           <h2>処罰の種類</h2>
           <p>違反内容に応じて、以下の対応を行う場合があります。複数の処罰を併用することもあります。</p>
-          <table class="meta-table">
-            <tbody>
-              <tr>
-                <th>口頭注意</th>
-                <td>軽微な違反、ルールの理解不足が原因の場合</td>
-              </tr>
-              <tr>
-                <th>警告</th>
-                <td>注意後の再発、または明確なルール違反</td>
-              </tr>
-              <tr>
-                <th>一時BAN</th>
-                <td>警告後の再発、中程度の違反</td>
-              </tr>
-              <tr>
-                <th>没収</th>
-                <td>不正に得た所持品・金銭・車両など。違反に関わる資産の没収</td>
-              </tr>
-              <tr>
-                <th>権限剥奪</th>
-                <td>職業権限の悪用があった場合の役職・権限の剥奪</td>
-              </tr>
-              <tr>
-                <th>永久BAN</th>
-                <td>悪質な違反、繰り返しの違反、即時BAN対象の行為</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-wrap">
+            <table class="data-table">
+              <tbody>
+                <tr>
+                  <th>口頭注意</th>
+                  <td>軽微な違反、ルールの理解不足が原因の場合</td>
+                </tr>
+                <tr>
+                  <th>警告</th>
+                  <td>注意後の再発、または明確なルール違反</td>
+                </tr>
+                <tr>
+                  <th>一時BAN</th>
+                  <td>警告後の再発、中程度の違反</td>
+                </tr>
+                <tr>
+                  <th>没収</th>
+                  <td>不正に得た所持品・金銭・車両など。違反に関わる資産の没収</td>
+                </tr>
+                <tr>
+                  <th>権限剥奪</th>
+                  <td>職業権限の悪用があった場合の役職・権限の剥奪</td>
+                </tr>
+                <tr>
+                  <th>永久BAN</th>
+                  <td>悪質な違反、繰り返しの違反、即時BAN対象の行為</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </section>
 
-        <section class="panel content-section">
+        <section class="rule-section">
           <h2>警告なしで処罰される行為</h2>
           <div class="callout">
             <strong>即時対応:</strong>
             以下の行為は、警告なしで一時BANまたは永久BANになる場合があります。
           </div>
-          <ul class="bullet-list">
-            <li>複数のディスコードで申請し複数のキャラクターを持つこと。</li>
-            <li>チート、外部ツールの使用、グリッチ・不具合の悪用。</li>
-            <li>RMT、現金取引、アカウント売買。</li>
-            <li>個人情報の晒し、脅迫、サーバー内外での粘着行為。</li>
-            <li>運営への虚偽の通報、証拠の捏造。</li>
-            <li>運営活動の妨害、処罰逃れを目的としたサブアカウントの使用。</li>
+          <ul class="rules">
+            <li class="rule ban">複数のディスコードで申請し複数のキャラクターを持つこと。</li>
+            <li class="rule ban">チート、外部ツールの使用、グリッチ・不具合の悪用。</li>
+            <li class="rule ban">RMT、現金取引、アカウント売買。</li>
+            <li class="rule ban">個人情報の晒し、脅迫、サーバー内外での粘着行為。</li>
+            <li class="rule ban">運営への虚偽の通報、証拠の捏造。</li>
+            <li class="rule ban">運営活動の妨害、処罰逃れを目的としたサブアカウントの使用。</li>
           </ul>
         </section>
 
-        <section class="panel content-section">
+        <section class="rule-section">
           <h2>通報について</h2>
-          <ul class="bullet-list">
-            <li>トラブルが起きても、ゲーム内で言い争わないでください。</li>
-            <li>通報する場合は、できるだけ動画やスクリーンショットなどの証拠を添えてください。</li>
-            <li>通報内容と通報者の情報は、運営が責任を持って取り扱います。</li>
+          <ul class="rules">
+            <li class="rule warn"><b class="tag">注意</b>トラブルが起きても、ゲーム内で言い争わないでください。</li>
+            <li class="rule ok"><b class="tag">推奨</b>通報する場合は、できるだけ動画やスクリーンショットなどの証拠を添えてください。</li>
+            <li class="rule">通報内容と通報者の情報は、運営が責任を持って取り扱います。</li>
           </ul>
         </section>
 
-        <section class="panel content-section">
+        <section class="rule-section">
           <h2>異議申し立て</h2>
-          <ul class="bullet-list">
-            <li>処罰に不服がある場合は、冷静に運営へ問い合わせてください。</li>
-            <li>感情的な抗議や、SNS・Discordでの晒し行為は、追加の処罰対象になります。</li>
-            <li>再調査の結果、処罰が変更・取り消しになる場合があります。</li>
+          <ul class="rules">
+            <li class="rule">処罰に不服がある場合は、冷静に運営へ問い合わせてください。</li>
+            <li class="rule warn"><b class="tag">注意</b>感情的な抗議や、SNS・Discordでの晒し行為は、追加の処罰対象になります。</li>
+            <li class="rule">再調査の結果、処罰が変更・取り消しになる場合があります。</li>
           </ul>
         </section>
       </main>

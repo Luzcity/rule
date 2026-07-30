@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -19,40 +19,42 @@
   <body>
     <div class="shell">
       <aside class="sidebar">
-        <a class="brand" href="index.html">
-          <span class="brand-mark">LC</span>
-          <span class="brand-text">
-            <strong>LuzCity Rules</strong>
-            <small>Rule Handbook</small>
-          </span>
-        </a>
-
+        <div class="sidebar-head">
+          <a class="brand" href="index.html">
+            <span class="brand-mark">LC</span>
+            <span class="brand-text">
+              <strong>LuzCity Rules</strong>
+              <small>Rule Handbook</small>
+            </span>
+          </a>
+          <label class="nav-toggle" for="nav-open">メニュー</label>
+        </div>
+        <input type="checkbox" id="nav-open" class="nav-state" />
         <nav class="sidebar-nav" aria-label="Primary">
           <p class="nav-label">Main</p>
           <a class="nav-link is-active" href="index.html">サーバールール</a>
-          <p class="nav-label">Category</p>
+          <p class="nav-label">Jobs</p>
           <a class="nav-link" href="pages/pd-rules.html">PDルール</a>
           <a class="nav-link" href="pages/ems-rules.html">EMSルール</a>
           <a class="nav-link" href="pages/mechanic-rules.html">メカニックルール</a>
           <a class="nav-link" href="pages/restaurant-rules.html">飲食店ルール</a>
+          <p class="nav-label">Crime</p>
           <a class="nav-link" href="pages/hangure-rules.html">半グレルール</a>
           <a class="nav-link" href="pages/gang-rules.html">ギャングルール</a>
           <a class="nav-link" href="pages/crime-types-rules.html">犯罪種類＆可能人数</a>
+          <p class="nav-label">Support</p>
           <a class="nav-link" href="pages/crash-rules.html">シーン中のクラッシュについて</a>
           <a class="nav-link" href="pages/ban-rules.html">BAN・処罰</a>
         </nav>
-
-        <div class="sidebar-card">
-          <p class="card-title">参加前に確認</p>
-          <p>
-            まずこのページのサーバールールを読んでください。職業やギャングをやる人は、該当カテゴリのページもチェック。
-          </p>
+        <div class="sidebar-note">
+          <strong>参加前に確認</strong>
+          <p>まずこのページのサーバールールを読んでください。職業やギャングをやる人は、該当カテゴリのページもチェック。</p>
         </div>
       </aside>
 
       <main class="content">
         <header class="page-header">
-          <p class="eyebrow">LuzCity Standard</p>
+          <p class="eyebrow">LuzCity Rule Handbook</p>
           <h1>LuzCity サーバールール</h1>
           <p class="lead">
             当サーバーはPVPをメインとしたサーバーではありません。
@@ -61,167 +63,171 @@
           <div class="header-actions">
             <a class="button button-primary" href="#basic">基本ルールから読む</a>
             <a class="button button-secondary" href="pages/ban-rules.html">BAN・処罰を見る</a>
-            <p class="restart-time">サーバー再起動時間 <strong>6時・18時</strong></p>
+            <p class="restart-time">サーバー再起動 <strong>6:00 / 18:00</strong></p>
           </div>
         </header>
 
-        <section class="grid">
-          <article class="panel">
-            <p class="panel-label">Police</p>
+        <section class="card-grid" aria-label="カテゴリルール">
+          <a class="card" href="pages/pd-rules.html">
+            <p class="card-label">Police</p>
             <h2>PDルール</h2>
-            <p>警察（PD）プレイヤー向けのルールです。勤務・対応・発砲の基準をまとめています。</p>
-            <a class="text-link" href="pages/pd-rules.html">ページを開く</a>
-          </article>
-
-          <article class="panel">
-            <p class="panel-label">Medic</p>
+            <p>警察（PD）向け。勤務・対応・発砲の基準。</p>
+          </a>
+          <a class="card" href="pages/ems-rules.html">
+            <p class="card-label">Medic</p>
             <h2>EMSルール</h2>
-            <p>EMSプレイヤー向けのルールです。救護対応・中立性・禁止事項をまとめています。</p>
-            <a class="text-link" href="pages/ems-rules.html">ページを開く</a>
-          </article>
-
-          <article class="panel">
-            <p class="panel-label">Private Medic</p>
+            <p>EMS向け。救護対応・中立性・禁止事項。</p>
+          </a>
+          <a class="card" href="pages/mechanic-rules.html">
+            <p class="card-label">Mechanic</p>
+            <h2>メカニックルール</h2>
+            <p>メカニック向け。修理・カスタム・料金の基準。</p>
+          </a>
+          <a class="card" href="pages/restaurant-rules.html">
+            <p class="card-label">Restaurant</p>
+            <h2>飲食店ルール</h2>
+            <p>飲食店向け。商品登録・接客・運営基準。</p>
+          </a>
+          <a class="card" href="pages/hangure-rules.html">
+            <p class="card-label">Hangure</p>
+            <h2>半グレルール</h2>
+            <p>半グレ・準犯罪組織向け。活動範囲と申請基準。</p>
+          </a>
+          <a class="card" href="pages/gang-rules.html">
+            <p class="card-label">Gang</p>
+            <h2>ギャングルール</h2>
+            <p>ギャング向け。設立・抗争・縄張りの基準。</p>
+          </a>
+          <a class="card" href="pages/crime-types-rules.html">
+            <p class="card-label">Crime Types</p>
+            <h2>犯罪種類＆可能人数</h2>
+            <p>犯罪RPごとの参加人数・車両・ヘリの上限。</p>
+          </a>
+          <a class="card" href="pages/crash-rules.html">
+            <p class="card-label">Scene Crash</p>
+            <h2>シーン中のクラッシュ</h2>
+            <p>シーン中にクラッシュした場合の復帰後の対応。</p>
+          </a>
+          <a class="card" href="pages/ban-rules.html">
+            <p class="card-label">Penalty</p>
+            <h2>BAN・処罰</h2>
+            <p>処罰の流れ、即時BANの対象、異議申し立て。</p>
+          </a>
+          <div class="card is-disabled">
+            <p class="card-label">Private Medic</p>
             <h2>個人医</h2>
             <p>いずれ実装予定</p>
-          </article>
-
-          <article class="panel">
-            <p class="panel-label">Mechanic</p>
-            <h2>メカニックルール</h2>
-            <p>メカニックプレイヤー向けのルールです。修理・カスタム・料金の基準をまとめています。</p>
-            <a class="text-link" href="pages/mechanic-rules.html">ページを開く</a>
-          </article>
-
-          <article class="panel">
-            <p class="panel-label">Restaurant</p>
-            <h2>飲食店ルール</h2>
-            <p>飲食店プレイヤー向けのルールです。商品登録・接客・運営基準をまとめています。</p>
-            <a class="text-link" href="pages/restaurant-rules.html">ページを開く</a>
-          </article>
-
-          <article class="panel">
-            <p class="panel-label">Hangure</p>
-            <h2>半グレルール</h2>
-            <p>半グレ・準犯罪組織向けのルールです。活動範囲・禁止事項・申請基準をまとめています。</p>
-            <a class="text-link" href="pages/hangure-rules.html">ページを開く</a>
-          </article>
-
-          <article class="panel">
-            <p class="panel-label">Gang</p>
-            <h2>ギャングルール</h2>
-            <p>ギャング・犯罪組織向けのルールです。設立・抗争・縄張りの基準をまとめています。</p>
-            <a class="text-link" href="pages/gang-rules.html">ページを開く</a>
-          </article>
-
-          <article class="panel">
-            <p class="panel-label">Crime Types</p>
-            <h2>犯罪種類＆可能人数</h2>
-            <p>犯罪RPごとの参加可能人数です。強盗・誘拐・抗争などの人数上限をまとめています。</p>
-            <a class="text-link" href="pages/crime-types-rules.html">ページを開く</a>
-          </article>
-
-          <article class="panel">
-            <p class="panel-label">Scene Crash</p>
-            <h2>シーン中のクラッシュについて</h2>
-            <p>大型犯罪中や打ち合い中にクライアントがクラッシュした場合の、復帰後の行動と対応をまとめています。</p>
-            <a class="text-link" href="pages/crash-rules.html">ページを開く</a>
-          </article>
-
-          <article class="panel">
-            <p class="panel-label">Penalty</p>
-            <h2>BAN・処罰</h2>
-            <p>違反時の処罰の流れ、即時BANの対象、異議申し立ての方法をまとめています。</p>
-            <a class="text-link" href="pages/ban-rules.html">ページを開く</a>
-          </article>
-        </section>
-
-        <section class="panel content-section" id="basic">
-          <h2>1. 基本ルール</h2>
-          <ul class="bullet-list">
-            <li><span class="rule-prohibited">他プレイヤーへの暴言、差別発言、過度な煽り、嫌がらせは禁止です。</span></li>
-            <li><span class="rule-prohibited">サーバー内外を問わず、個人情報の晒し、脅迫、粘着行為は禁止です。</span></li>
-            <li><span class="rule-prohibited">チート、外部ツール、グリッチ、不具合の悪用は禁止です。</span></li>
-            <li>追加で使用したいMODや設定がある場合は、導入前に必ずADMINへチケットを作成して確認してください。</li>
-            <li><span class="rule-prohibited">Discordなどの外部ツールで通話しながらプレイすることは禁止です。</span>通話は必ずゲーム内VCを使用してください。</li>
-            <li><span class="rule-prohibited">情報屋として隠し要素の売買は禁止です。</span>ただし、イエローページでの傭兵募集など、募集目的の掲載は可能とします。</li>
-            <li><span class="rule-prohibited">隠し要素についてのヒントを他人に共有することも禁止とします。</span>ヒントはいたるところに配置しています。別街がこうだからという認識でプレイすることは推奨しません。</li>
-            <li><span class="rule-prohibited">複数のDiscordで申請し、複数のキャラクターを持つことは禁止です。発覚した場合はBAN対象になります。</span>やむを得ない場合は、チケットにて理由を明確に説明し、許可を得てください。</li>
-            <li><span class="rule-prohibited">スピードブースト（スピブ）、グリッチロール（グリロ）、無線打ちは明示的に禁止です。</span></li>
-            <li>バグや不具合を見つけた場合は、<span class="rule-prohibited">悪用せず</span>運営へ報告してください。</li>
-            <li>運営の指示には従ってください。判断に不満がある場合は、冷静に問い合わせを行ってください。</li>
-          </ul>
-          <div class="graphics-rules">
-            <h3 class="rule-subheading">クライアント側グラフィック変更について</h3>
-            <p><span class="rule-prohibited">citizenは全面的に禁止です。</span></p>
-            <p>QuantV、NaturalVision Evolved、VisualV、ReShadeなどを使用した、一般的な画質改善および自然な色調変更は許可します。</p>
-            <p><span class="rule-prohibited">ただし、使用するソフトウェア、MOD、プリセットの名称にかかわらず、戦闘、索敵、追跡などにおいて通常のゲーム環境より有利になる表示変更は禁止します。</span></p>
-            <p>以下の変更は禁止対象となります。</p>
-            <ul class="bullet-list">
-              <li>[No Fog][No Rain][No Shadows]など、視認性の向上を目的としたPvP Pack、FPS Pack、Citizen Pack</li>
-              <li>[No Water][No Bush][No Props]など、草木、植生、オブジェクト、パーティクルなどを削除し、プレイヤーや車両を発見しやすくする変更や霧、雨、雲、夜間、影、煙、砂埃などの視界を妨げる表現を削除、または著しく軽減する変更</li>
-              <li>暗所を常時明るく表示するFullbright、ナイトビジョン、サーマル表示などの使用</li>
-              <li>プレイヤー、車両、武器などを蛍光色、特定色、輪郭線、グローなどで強調する変更</li>
-              <li>深度情報などを利用して人物やオブジェクトを検出、強調、識別するシェーダーまたはアドオン</li>
-              <li>オンライン向け制限を解除した改造版/アンロック版のReShadeなど、またはPvP用途のプラグイン</li>
-              <li>外部クロスヘア、敵検出、移動検知その他これらに類するオーバーレイ</li>
-            </ul>
-            <p>クロスヘアはサーバー内に実装されているものを使用してください(/reticleで調整可能)。</p>
-            <p>許可されているグラフィックMODであっても、禁止対象となるプリセット、ファイル、シェーダーまたはアドオンと組み合わせて使用した場合は違反となります。</p>
-            <p>判断が難しい場合、運営は実際の表示結果、導入ファイル、設定内容および使用目的を総合的に確認します。名称や配布元ではなく、ゲームプレイ上の効果を基準として判断します。</p>
           </div>
         </section>
 
-        <section class="panel content-section">
-          <h2>2. RPルール</h2>
-          <ul class="bullet-list">
-            <li>現実の自分ではなく、キャラクターとして行動してください。</li>
-            <li>キャラクターの性別は自由に選択していただいて構いませんが、キャラクターの性別と合わせたRPをしてください。</li>
-            <li><span class="rule-prohibited">明らかに現実離れした行動や、RPを壊す発言は控えてください。</span></li>
-            <li><span class="rule-prohibited">VCやチャットで、ゲーム外の情報を不自然にRPへ持ち込む行為は禁止です。</span></li>
-            <li><span class="rule-prohibited">配信、Discord、他人の画面などから得た情報をゲーム内で利用する行為は禁止です。</span></li>
-            <li><span class="rule-prohibited">声判断は禁止です。声や話し方だけを根拠に、別キャラクターや中の人を特定・断定してRPへ持ち込む行為は禁止です。</span></li>
-            <li><span class="rule-prohibited">システムメタは禁止です。ID、名前表示、通知、UI、ログなどのシステム情報を根拠に人物を特定し、RPへ利用する行為は禁止です。</span></li>
-            <li><span class="rule-prohibited">大ダウン後は、大ダウン前30分程度に得た情報を復帰後に利用することは禁止です。</span></li>
+        <nav class="toc" aria-label="目次">
+          <p class="toc-title">Index</p>
+          <ol>
+            <li><a href="#basic">基本ルール</a></li>
+            <li><a href="#rp">RPルール</a></li>
+            <li><a href="#combat">戦闘・犯罪ルール</a></li>
+            <li><a href="#job">職業ルール</a></li>
+            <li><a href="#sidejob">兼業ルール</a></li>
+            <li><a href="#vehicle">車両・運転ルール</a></li>
+            <li><a href="#economy">経済・アイテムルール</a></li>
+            <li><a href="#vc">VC・チャットルール</a></li>
+            <li><a href="#discord">Discordルール</a></li>
+            <li><a href="#stream">配信・録画ルール</a></li>
+            <li><a href="#penalty">処罰について</a></li>
+            <li><a href="#outro">最後に</a></li>
+          </ol>
+        </nav>
+
+        <section class="rule-section" id="basic">
+          <h2><span class="sec-no">01</span>基本ルール</h2>
+          <ul class="rules">
+            <li class="rule ban"><b class="tag">禁止</b>他プレイヤーへの暴言、差別発言、過度な煽り、嫌がらせは禁止です。</li>
+            <li class="rule ban"><b class="tag">禁止</b>サーバー内外を問わず、個人情報の晒し、脅迫、粘着行為は禁止です。</li>
+            <li class="rule ban"><b class="tag">禁止</b>チート、外部ツール、グリッチ、不具合の悪用は禁止です。</li>
+            <li class="rule app"><b class="tag">申請</b>追加で使用したいMODや設定がある場合は、導入前に必ずADMINへチケットを作成して確認してください。</li>
+            <li class="rule ban"><b class="tag">禁止</b>Discordなどの外部ツールで通話しながらプレイすることは禁止です。通話は必ずゲーム内VCを使用してください。</li>
+            <li class="rule ban"><b class="tag">禁止</b>情報屋として隠し要素の売買は禁止です。ただし、イエローページでの傭兵募集など、募集目的の掲載は可能とします。</li>
+            <li class="rule ban"><b class="tag">禁止</b>隠し要素についてのヒントを他人に共有することも禁止とします。ヒントはいたるところに配置しています。別街がこうだからという認識でプレイすることは推奨しません。</li>
+            <li class="rule ban"><b class="tag">禁止</b>複数のDiscordで申請し、複数のキャラクターを持つことは禁止です。発覚した場合はBAN対象になります。やむを得ない場合は、チケットにて理由を明確に説明し、許可を得てください。</li>
+            <li class="rule ban"><b class="tag">禁止</b>スピードブースト（スピブ）、グリッチロール（グリロ）、無線打ちは明示的に禁止です。</li>
+            <li class="rule warn"><b class="tag">注意</b>バグや不具合を見つけた場合は、悪用せず運営へ報告してください。</li>
+            <li class="rule">運営の指示には従ってください。判断に不満がある場合は、冷静に問い合わせを行ってください。</li>
+          </ul>
+
+          <h3>クライアント側グラフィック変更について</h3>
+          <ul class="rules">
+            <li class="rule ban"><b class="tag">禁止</b>citizenは全面的に禁止です。</li>
+            <li class="rule ok"><b class="tag">許可</b>QuantV、NaturalVision Evolved、VisualV、ReShadeなどを使用した、一般的な画質改善および自然な色調変更は許可します。</li>
+            <li class="rule ban"><b class="tag">禁止</b>使用するソフトウェア、MOD、プリセットの名称にかかわらず、戦闘、索敵、追跡などにおいて通常のゲーム環境より有利になる表示変更は禁止します。</li>
+          </ul>
+          <p>以下の変更は禁止対象となります。</p>
+          <ul class="rules">
+            <li class="rule ban">[No Fog][No Rain][No Shadows]など、視認性の向上を目的としたPvP Pack、FPS Pack、Citizen Pack</li>
+            <li class="rule ban">[No Water][No Bush][No Props]など、草木、植生、オブジェクト、パーティクルなどを削除し、プレイヤーや車両を発見しやすくする変更や霧、雨、雲、夜間、影、煙、砂埃などの視界を妨げる表現を削除、または著しく軽減する変更</li>
+            <li class="rule ban">暗所を常時明るく表示するFullbright、ナイトビジョン、サーマル表示などの使用</li>
+            <li class="rule ban">プレイヤー、車両、武器などを蛍光色、特定色、輪郭線、グローなどで強調する変更</li>
+            <li class="rule ban">深度情報などを利用して人物やオブジェクトを検出、強調、識別するシェーダーまたはアドオン</li>
+            <li class="rule ban">オンライン向け制限を解除した改造版/アンロック版のReShadeなど、またはPvP用途のプラグイン</li>
+            <li class="rule ban">外部クロスヘア、敵検出、移動検知その他これらに類するオーバーレイ</li>
+          </ul>
+          <ul class="rules">
+            <li class="rule">クロスヘアはサーバー内に実装されているものを使用してください（<code>/reticle</code>で調整可能）。</li>
+            <li class="rule warn"><b class="tag">注意</b>許可されているグラフィックMODであっても、禁止対象となるプリセット、ファイル、シェーダーまたはアドオンと組み合わせて使用した場合は違反となります。</li>
+            <li class="rule">判断が難しい場合、運営は実際の表示結果、導入ファイル、設定内容および使用目的を総合的に確認します。名称や配布元ではなく、ゲームプレイ上の効果を基準として判断します。</li>
           </ul>
         </section>
 
-        <section class="panel content-section">
-          <h2>3. 戦闘・犯罪ルール</h2>
-          <ul class="bullet-list">
-            <li><span class="rule-prohibited">サーバー再起動後の15分間は犯罪禁止です。</span></li>
-            <li>もし犯罪をしてしまった場合は、PDに連絡を入れて、どうするか双方で話し合ってください。</li>
-            <li><span class="rule-prohibited">理由のない殺害、無差別攻撃、通り魔行為は禁止です。</span></li>
-            <li>犯罪RPを行う場合は、相手にもRPの余地を残してください。</li>
-            <li>人質解放条件について、必ずしも要求が通るとは限りません。双方でRPの範囲で決めてください。</li>
-            <li>コンビニ強盗・フリーカ強盗で店員を人質にすることは不可です。</li>
-            <li>強盗、誘拐、抗争などは、会話や状況作りを大切にしてください。</li>
-            <li><span class="rule-prohibited">警察、EMS、一般市民を巻き込む行為は、過度にならないよう注意してください。</span></li>
-            <li><span class="rule-prohibited">安全地帯やイベント中の妨害行為は禁止です。</span></li>
-            <li>追跡・犯罪シーンは、5分間逃げ切った時点で収束とします。</li>
-            <li>戦闘・犯罪シーン中にダウンした場合、EMSへの救難信号はシーン外の安全が確保された場所でのみ可能です。</li>
-            <li><span class="rule-prohibited">蘇生後は犯罪者側・PD側ともに現場復帰は禁止です。</span>シーンから離脱する旨を伝え、速やかに現場を離れてください。</li>
-            <li>ダウン中は小声以下での発声、もしくは無線のピコピコ音のみ可能です。<span class="rule-prohibited">蘇生後に現場情報を共有することも禁止です。</span>蘇生後は速やかにシーンから離脱してください。</li>
-            <li><span class="rule-prohibited">基本的にロブ行為(他人の持ち物を奪う行為)は禁止です。</span></li>
-            <li>現場の安全面を考慮し、EMSから治療を拒否される場合があります。</li>
-            <li><strong>※中型以上の犯罪をする際は、受注者にコードが配られます。ラジアルメニューから「現場状況」を開き、受注者はコードを味方に共有してください。共有された人は「現場状況」からコードを入力し、その犯罪に参加してください。全滅時・撤退時・利確時などには、PDへ通知を送ることができます。必ず実行してください。</strong></li>
+        <section class="rule-section" id="rp">
+          <h2><span class="sec-no">02</span>RPルール</h2>
+          <ul class="rules">
+            <li class="rule">現実の自分ではなく、キャラクターとして行動してください。</li>
+            <li class="rule">キャラクターの性別は自由に選択していただいて構いませんが、キャラクターの性別と合わせたRPをしてください。</li>
+            <li class="rule warn"><b class="tag">注意</b>明らかに現実離れした行動や、RPを壊す発言は控えてください。</li>
+            <li class="rule ban"><b class="tag">禁止</b>VCやチャットで、ゲーム外の情報を不自然にRPへ持ち込む行為は禁止です。</li>
+            <li class="rule ban"><b class="tag">禁止</b>配信、Discord、他人の画面などから得た情報をゲーム内で利用する行為は禁止です。</li>
+            <li class="rule ban"><b class="tag">禁止</b>声判断は禁止です。声や話し方だけを根拠に、別キャラクターや中の人を特定・断定してRPへ持ち込む行為は禁止です。</li>
+            <li class="rule ban"><b class="tag">禁止</b>システムメタは禁止です。ID、名前表示、通知、UI、ログなどのシステム情報を根拠に人物を特定し、RPへ利用する行為は禁止です。</li>
+            <li class="rule ban"><b class="tag">禁止</b>大ダウン後は、大ダウン前30分程度に得た情報を復帰後に利用することは禁止です。</li>
           </ul>
+        </section>
+
+        <section class="rule-section" id="combat">
+          <h2><span class="sec-no">03</span>戦闘・犯罪ルール</h2>
+          <ul class="rules">
+            <li class="rule ban"><b class="tag">禁止</b>サーバー再起動後の15分間は犯罪禁止です。もし犯罪をしてしまった場合は、PDに連絡を入れて、どうするか双方で話し合ってください。</li>
+            <li class="rule ban"><b class="tag">禁止</b>理由のない殺害、無差別攻撃、通り魔行為は禁止です。</li>
+            <li class="rule">犯罪RPを行う場合は、相手にもRPの余地を残してください。強盗、誘拐、抗争などは、会話や状況作りを大切にしてください。</li>
+            <li class="rule">人質解放条件について、必ずしも要求が通るとは限りません。双方でRPの範囲で決めてください。</li>
+            <li class="rule ban"><b class="tag">禁止</b>コンビニ強盗・フリーカ強盗で店員を人質にすることは不可です。</li>
+            <li class="rule warn"><b class="tag">注意</b>警察、EMS、一般市民を巻き込む行為は、過度にならないよう注意してください。</li>
+            <li class="rule ban"><b class="tag">禁止</b>安全地帯やイベント中の妨害行為は禁止です。</li>
+            <li class="rule">追跡・犯罪シーンは、5分間逃げ切った時点で収束とします。</li>
+            <li class="rule warn"><b class="tag">注意</b>戦闘・犯罪シーン中にダウンした場合、EMSへの救難信号はシーン外の安全が確保された場所でのみ可能です。</li>
+            <li class="rule ban"><b class="tag">禁止</b>蘇生後は犯罪者側・PD側ともに現場復帰は禁止です。シーンから離脱する旨を伝え、速やかに現場を離れてください。</li>
+            <li class="rule ban"><b class="tag">禁止</b>ダウン中は小声以下での発声、もしくは無線のピコピコ音のみ可能です。蘇生後に現場情報を共有することも禁止です。蘇生後は速やかにシーンから離脱してください。</li>
+            <li class="rule ban"><b class="tag">禁止</b>基本的にロブ行為（他人の持ち物を奪う行為）は禁止です。</li>
+            <li class="rule">現場の安全面を考慮し、EMSから治療を拒否される場合があります。</li>
+          </ul>
+          <div class="callout">
+            <strong>中型以上の犯罪をする場合:</strong>
+            受注者にコードが配られます。ラジアルメニューから「現場状況」を開き、受注者はコードを味方に共有してください。共有された人は「現場状況」からコードを入力し、その犯罪に参加してください。全滅時・撤退時・利確時などには、PDへ通知を送ることができます。必ず実行してください。
+          </div>
           <div class="callout">
             <strong>半グレ・ギャング・組織で活動する場合:</strong>
             <a href="pages/hangure-rules.html">半グレルール</a>・<a href="pages/gang-rules.html">ギャングルール</a>・<a href="pages/crime-types-rules.html">犯罪種類＆可能人数</a>も必ず確認してください。
           </div>
         </section>
 
-        <section class="panel content-section">
-          <h2>4. 職業ルール</h2>
-          <ul class="bullet-list">
-            <li>警察、EMS、メカニックなどの公務・職業RPでは、役職にふさわしい行動をしてください。</li>
-            <li><span class="rule-prohibited">職業権限、支給品、専用車両、専用アイテムの私的利用は禁止です。</span></li>
-            <li><span class="rule-prohibited">職業で得た情報を犯罪RPや別キャラクターに流用する行為は禁止です。</span></li>
-            <li><span class="rule-prohibited">公務員の退職後、1週間は犯罪行為を禁止します（メタ行為を防ぐため）。発覚した場合は国外追放とします。</span></li>
-            <li>公務員への復職は1回までです。（採用されるかは分かりません）</li>
-            <li>白市民パスの取得および公務員（PD、EMS、メカニック）への就職は、直近2週間の犯罪履歴がないと確認された場合に可能です。</li>
-            <li><span class="rule-prohibited">無断欠勤、職務放棄、職業RPの妨害は処罰対象になる場合があります。</span></li>
+        <section class="rule-section" id="job">
+          <h2><span class="sec-no">04</span>職業ルール</h2>
+          <ul class="rules">
+            <li class="rule">警察、EMS、メカニックなどの公務・職業RPでは、役職にふさわしい行動をしてください。</li>
+            <li class="rule ban"><b class="tag">禁止</b>職業権限、支給品、専用車両、専用アイテムの私的利用は禁止です。</li>
+            <li class="rule ban"><b class="tag">禁止</b>職業で得た情報を犯罪RPや別キャラクターに流用する行為は禁止です。</li>
+            <li class="rule ban"><b class="tag">禁止</b>公務員の退職後、1週間は犯罪行為を禁止します（メタ行為を防ぐため）。発覚した場合は国外追放とします。</li>
+            <li class="rule">公務員への復職は1回までです。（採用されるかは分かりません）</li>
+            <li class="rule">白市民パスの取得および公務員（PD、EMS、メカニック）への就職は、直近2週間の犯罪履歴がないと確認された場合に可能です。</li>
+            <li class="rule warn"><b class="tag">注意</b>無断欠勤、職務放棄、職業RPの妨害は処罰対象になる場合があります。</li>
           </ul>
           <div class="callout">
             <strong>職業ごとの詳細:</strong>
@@ -229,74 +235,73 @@
           </div>
         </section>
 
-        <section class="panel content-section">
-          <h2>5. 兼業ルール</h2>
-          <ul class="bullet-list">
-            <li>兼業は原則2種までです。</li>
-            <li><span class="rule-prohibited">公務員（PD、EMS）間の兼業は禁止です。</span></li>
-            <li><span class="rule-prohibited">メカニックと公務員（PD、EMS）の兼業も禁止です。</span></li>
-            <li><span class="rule-prohibited">不可例: PD ⇔ EMS / PD ⇔ メカニック / EMS ⇔ メカニック</span></li>
-            <li>可例: PD ⇔ 有人店舗 / EMS ⇔ 有人店舗 / メカニック ⇔ 有人店舗</li>
-            <li>白市民は有人店舗2種に特に制限はありません（<span class="rule-prohibited">フロント企業は不可</span>）。</li>
-            <li>黒市民（半グレ・ギャング）はフロント企業のみ就職可能です（稼げ過ぎてしまうため）。</li>
+        <section class="rule-section" id="sidejob">
+          <h2><span class="sec-no">05</span>兼業ルール</h2>
+          <ul class="rules">
+            <li class="rule">兼業は原則2種までです。</li>
+            <li class="rule ban"><b class="tag">禁止</b>公務員（PD、EMS）間の兼業は禁止です。メカニックと公務員（PD、EMS）の兼業も禁止です。</li>
+            <li class="rule ban">不可例: PD ⇔ EMS / PD ⇔ メカニック / EMS ⇔ メカニック</li>
+            <li class="rule ok">可例: PD ⇔ 有人店舗 / EMS ⇔ 有人店舗 / メカニック ⇔ 有人店舗</li>
+            <li class="rule">白市民は有人店舗2種に特に制限はありません（フロント企業は不可）。</li>
+            <li class="rule">黒市民（半グレ・ギャング）はフロント企業のみ就職可能です（稼げ過ぎてしまうため）。</li>
           </ul>
         </section>
 
-        <section class="panel content-section">
-          <h2>6. 車両・運転ルール</h2>
-          <ul class="bullet-list">
-            <li>VDMはRPとして成立する状況に限り許可します。</li>
-            <li><span class="rule-prohibited">ランダムVDM（理由なく無差別に車両で轢く行為）、連続轢き逃げ、無意味な暴走は禁止です。</span></li>
-            <li>ヘリブレ（ヘリコプターのローターを使った攻撃）は明示的に許可します。ただし、RPとして成立する範囲で行ってください。</li>
-            <li>事故や追跡はRPとして成立する範囲で行ってください。</li>
-            <li><span class="rule-prohibited">他人の車両を理由なく破壊、放置、妨害する行為は禁止です。</span></li>
-            <li><span class="rule-prohibited">EMS車両の窃盗、および無断使用は禁止です。</span></li>
-            <li><span class="rule-prohibited">サーバーに負荷をかける大量の車両放置は禁止です。</span></li>
+        <section class="rule-section" id="vehicle">
+          <h2><span class="sec-no">06</span>車両・運転ルール</h2>
+          <ul class="rules">
+            <li class="rule ok"><b class="tag">許可</b>VDMはRPとして成立する状況に限り許可します。</li>
+            <li class="rule ban"><b class="tag">禁止</b>ランダムVDM（理由なく無差別に車両で轢く行為）、連続轢き逃げ、無意味な暴走は禁止です。</li>
+            <li class="rule ok"><b class="tag">許可</b>ヘリブレ（ヘリコプターのローターを使った攻撃）は明示的に許可します。ただし、RPとして成立する範囲で行ってください。</li>
+            <li class="rule">事故や追跡はRPとして成立する範囲で行ってください。</li>
+            <li class="rule ban"><b class="tag">禁止</b>他人の車両を理由なく破壊、放置、妨害する行為は禁止です。</li>
+            <li class="rule ban"><b class="tag">禁止</b>EMS車両の窃盗、および無断使用は禁止です。</li>
+            <li class="rule ban"><b class="tag">禁止</b>サーバーに負荷をかける大量の車両放置は禁止です。</li>
           </ul>
         </section>
 
-        <section class="panel content-section">
-          <h2>7. 経済・アイテムルール</h2>
-          <ul class="bullet-list">
-            <li><span class="rule-prohibited">アイテム、金銭、車両などの不正取得は禁止です。</span></li>
-            <li><span class="rule-prohibited">バグ、複製、抜け道を利用した利益取得は禁止です。</span></li>
-            <li><span class="rule-prohibited">RMT、現金取引、アカウント売買は禁止です。</span></li>
-            <li>他人を騙すRPは可能ですが、<span class="rule-prohibited">悪質な詐欺や粘着目的の行為は禁止です。</span></li>
+        <section class="rule-section" id="economy">
+          <h2><span class="sec-no">07</span>経済・アイテムルール</h2>
+          <ul class="rules">
+            <li class="rule ban"><b class="tag">禁止</b>アイテム、金銭、車両などの不正取得は禁止です。</li>
+            <li class="rule ban"><b class="tag">禁止</b>バグ、複製、抜け道を利用した利益取得は禁止です。</li>
+            <li class="rule ban"><b class="tag">禁止</b>RMT、現金取引、アカウント売買は禁止です。</li>
+            <li class="rule warn"><b class="tag">注意</b>他人を騙すRPは可能ですが、悪質な詐欺や粘着目的の行為は禁止です。</li>
           </ul>
         </section>
 
-        <section class="panel content-section">
-          <h2>8. VC・チャットルール</h2>
-          <ul class="bullet-list">
-            <li><span class="rule-prohibited">暴言、奇声、ノイズ、音楽の垂れ流しは禁止です。</span></li>
-            <li>RP中は周囲の雰囲気を壊さない発言を心がけてください。</li>
-            <li>OOC発言は必要最低限にしてください。</li>
-            <li>トラブル時は<span class="rule-prohibited">ゲーム内で言い争わず</span>、証拠を添えて運営へ報告してください。</li>
+        <section class="rule-section" id="vc">
+          <h2><span class="sec-no">08</span>VC・チャットルール</h2>
+          <ul class="rules">
+            <li class="rule ban"><b class="tag">禁止</b>暴言、奇声、ノイズ、音楽の垂れ流しは禁止です。</li>
+            <li class="rule">RP中は周囲の雰囲気を壊さない発言を心がけてください。</li>
+            <li class="rule warn"><b class="tag">注意</b>OOC発言は必要最低限にしてください。</li>
+            <li class="rule warn"><b class="tag">注意</b>トラブル時はゲーム内で言い争わず、証拠を添えて運営へ報告してください。</li>
           </ul>
         </section>
 
-        <section class="panel content-section">
-          <h2>9. Discordルール</h2>
-          <ul class="bullet-list">
-            <li><span class="rule-prohibited">相手の同意がないフレンド申請やダイレクトメッセージの送信は禁止です。</span></li>
-            <li><span class="rule-prohibited">運営への問い合わせにDMを使用しないでください。</span>DMでは対応の透明性を確保できないため、必ずチケットを作成して問い合わせてください。</li>
+        <section class="rule-section" id="discord">
+          <h2><span class="sec-no">09</span>Discordルール</h2>
+          <ul class="rules">
+            <li class="rule ban"><b class="tag">禁止</b>相手の同意がないフレンド申請やダイレクトメッセージの送信は禁止です。</li>
+            <li class="rule app"><b class="tag">申請</b>運営への問い合わせにDMを使用しないでください。DMでは対応の透明性を確保できないため、必ずチケットを作成して問い合わせてください。</li>
           </ul>
         </section>
 
-        <section class="panel content-section">
-          <h2>10. 配信・録画ルール</h2>
-          <ul class="bullet-list">
-            <li>配信や録画は可能ですが、<span class="rule-prohibited">他プレイヤーへの迷惑行為は禁止です。</span></li>
-            <li>配信を行う場合は、ゲーム内で衛星マークをつけてください。</li>
-            <li>配信する人は、事前にチケットで配信するプラットフォームとチャンネルURLをADMINへ共有してください。</li>
-            <li>事前申請がない配信は外部VC利用として扱われ、<span class="rule-prohibited">BAN対象になる場合があります。</span></li>
-            <li><span class="rule-prohibited">配信コメントや外部情報を使ってゲーム内行動を決めることは禁止です。</span></li>
-            <li>トラブルや通報目的の場合は、できるだけ動画やスクリーンショットを残してください。</li>
+        <section class="rule-section" id="stream">
+          <h2><span class="sec-no">10</span>配信・録画ルール</h2>
+          <ul class="rules">
+            <li class="rule warn"><b class="tag">注意</b>配信や録画は可能ですが、他プレイヤーへの迷惑行為は禁止です。</li>
+            <li class="rule">配信を行う場合は、ゲーム内で衛星マークをつけてください。</li>
+            <li class="rule app"><b class="tag">申請</b>配信する人は、事前にチケットで配信するプラットフォームとチャンネルURLをADMINへ共有してください。</li>
+            <li class="rule ban"><b class="tag">禁止</b>事前申請がない配信は外部VC利用として扱われ、BAN対象になる場合があります。</li>
+            <li class="rule ban"><b class="tag">禁止</b>配信コメントや外部情報を使ってゲーム内行動を決めることは禁止です。</li>
+            <li class="rule ok"><b class="tag">推奨</b>トラブルや通報目的の場合は、できるだけ動画やスクリーンショットを残してください。</li>
           </ul>
         </section>
 
-        <section class="panel content-section">
-          <h2>11. 処罰について</h2>
+        <section class="rule-section" id="penalty">
+          <h2><span class="sec-no">11</span>処罰について</h2>
           <p>違反内容に応じて、口頭注意から永久BANまでの対応を行う場合があります。</p>
           <p>
             処罰の流れ、即時BANの対象、異議申し立ての方法は
@@ -304,8 +309,8 @@
           </p>
         </section>
 
-        <section class="panel content-section">
-          <h2>12. 最後に</h2>
+        <section class="rule-section" id="outro">
+          <h2><span class="sec-no">12</span>最後に</h2>
           <p>
             LuzCityは、勝ち負けだけではなく、プレイヤー同士で物語を作るサーバーです。
             相手のRPを尊重し、自分だけでなく周りも楽しめる行動を心がけてください。
