@@ -564,6 +564,17 @@ p + .rules {
   margin-top: 0.8rem;
 }
 
+/* 案内・手続き系（禁止・注意とは別色） */
+.callout.info {
+  border-left-color: var(--app);
+  background: var(--app-soft);
+}
+
+.callout.info strong,
+.callout.info a {
+  color: var(--app);
+}
+
 /* ---------- tables ---------- */
 
 .table-wrap {
