@@ -524,10 +524,6 @@ p + .rules {
   border-left: 3px solid var(--line-soft);
 }
 
-.rule.ban {
-  border-left-color: var(--ban);
-}
-
 /* ---------- callout ---------- */
 
 .callout {
@@ -545,6 +541,27 @@ p + .rules {
 
 .callout a {
   color: var(--amber-strong);
+}
+
+.callout p {
+  margin: 0.55rem 0 0;
+}
+
+.callout ul {
+  margin: 0.45rem 0 0;
+  padding-left: 1.3rem;
+}
+
+.callout > ul:first-child {
+  margin-top: 0;
+}
+
+.callout li + li {
+  margin-top: 0.3rem;
+}
+
+.callout + .callout {
+  margin-top: 0.8rem;
 }
 
 /* ---------- tables ---------- */
