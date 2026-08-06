@@ -7,6 +7,7 @@ LuzCity向けのルールと参加ガイドを、GitHub Pagesでそのまま公�
 - `index.html`: メイン画面（サーバールール全文）
 - `rule.txt`: サーバールールのテキスト原本
 - `styles.css`: 共通スタイル
+- `pages/job-rules.html`: ジョブルール
 - `pages/pd-rules.html`: PDルール
 - `pages/ems-rules.html`: EMSルール
 - `pages/mechanic-rules.html`: メカニックルール
