@@ -11,6 +11,7 @@ LuzCity向けのルールと参加ガイドを、GitHub Pagesでそのまま公�
 - `pages/ems-rules.html`: EMSルール
 - `pages/mechanic-rules.html`: メカニックルール
 - `pages/restaurant-rules.html`: 飲食店ルール
+- `pages/crime-rules.html`: 犯罪共通ルール
 - `pages/hangure-rules.html`: 半グレルール
 - `pages/gang-rules.html`: ギャングルール
 - `pages/crime-types-rules.html`: 犯罪種類＆可能人数
