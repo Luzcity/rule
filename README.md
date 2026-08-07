@@ -16,6 +16,7 @@ LuzCity向けのルールと参加ガイドを、GitHub Pagesでそのまま公�
 - `pages/hangure-rules.html`: 半グレルール
 - `pages/gang-rules.html`: ギャングルール
 - `pages/crime-types-rules.html`: 犯罪種類＆可能人数
+- `pages/crime-cooldown-rules.html`: 犯罪クールタイム
 - `pages/crash-rules.html`: シーン中のクラッシュについて
 - `pages/ban-rules.html`: BAN・処罰
 

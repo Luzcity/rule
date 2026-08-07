@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>犯罪クールタイム | LuzCity Rules</title>
+    <meta
+      name="description"
+      content="LuzCityの犯罪クールタイム — 犯罪ごとに再度実行できるまでの待機時間"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="sidebar-head">
+          <a class="brand" href="../index.html">
+            <span class="brand-mark">LC</span>
+            <span class="brand-text">
+              <strong>LuzCity Rules</strong>
+              <small>Rule Handbook</small>
+            </span>
+          </a>
+          <label class="nav-toggle" for="nav-open">メニュー</label>
+        </div>
+        <input type="checkbox" id="nav-open" class="nav-state" />
+        <nav class="sidebar-nav" aria-label="Primary">
+          <p class="nav-label">Main</p>
+          <a class="nav-link" href="../index.html">サーバールール</a>
+          <p class="nav-label">Jobs</p>
+          <a class="nav-link" href="job-rules.html">ジョブルール</a>
+          <a class="nav-link" href="pd-rules.html">PDルール</a>
+          <a class="nav-link" href="ems-rules.html">EMSルール</a>
+          <a class="nav-link" href="mechanic-rules.html">メカニックルール</a>
+          <a class="nav-link" href="restaurant-rules.html">飲食店ルール</a>
+          <p class="nav-label">Crime</p>
+          <a class="nav-link" href="crime-rules.html">犯罪共通ルール</a>
+          <a class="nav-link" href="hangure-rules.html">半グレルール</a>
+          <a class="nav-link" href="gang-rules.html">ギャングルール</a>
+          <a class="nav-link" href="crime-types-rules.html">犯罪種類＆可能人数</a>
+          <a class="nav-link is-active" href="crime-cooldown-rules.html">犯罪クールタイム</a>
+          <p class="nav-label">Support</p>
+          <a class="nav-link" href="crash-rules.html">シーン中のクラッシュについて</a>
+          <a class="nav-link" href="ban-rules.html">BAN・処罰</a>
+          <p class="nav-label">Donation</p>
+          <a class="nav-link" href="support-rules.html">支援について</a>
+        </nav>
+        <div class="sidebar-note">
+          <strong>クールタイムとは</strong>
+          <p>同じ犯罪をもう一度実行できるようになるまでの待機時間です。時間が経過するまで再度の実行はできません。</p>
+        </div>
+      </aside>
+
+      <main class="content">
+        <div class="topbar">
+          <a class="crumb" href="../index.html">← トップへ戻る</a>
+          <p class="eyebrow">Crime Cooldown</p>
+        </div>
+
+        <header class="page-header">
+          <h1>犯罪クールタイム</h1>
+          <p class="lead">
+            犯罪ごとに設定されているクールタイムの一覧です。
+            犯罪共通ルール、犯罪種類＆可能人数とあわせて確認してください。
+          </p>
+        </header>
+
+        <section class="rule-section">
+          <h2>犯罪別クールタイム</h2>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>犯罪</th>
+                  <th>クールタイム</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>ATM強盗</th>
+                  <td class="num">1分</td>
+                </tr>
+                <tr>
+                  <th>空き巣</th>
+                  <td class="num">10分</td>
+                </tr>
+                <tr>
+                  <th>店舗強盗（24/7・LTD）</th>
+                  <td class="num">15分</td>
+                </tr>
+                <tr>
+                  <th>Vangelico宝石店</th>
+                  <td class="num">20分</td>
+                </tr>
+                <tr>
+                  <th>住宅強盗</th>
+                  <td class="num">30分</td>
+                </tr>
+                <tr>
+                  <th>フリーカ銀行</th>
+                  <td class="num">30分</td>
+                </tr>
+                <tr>
+                  <th>クラブ強盗</th>
+                  <td class="num">1時間</td>
+                </tr>
+                <tr>
+                  <th>テルミット強盗</th>
+                  <td class="num">1時間</td>
+                </tr>
+                <tr>
+                  <th>IAA強盗</th>
+                  <td class="num">1時間</td>
+                </tr>
+                <tr>
+                  <th>メリウェザー強盗</th>
+                  <td class="num">1時間</td>
+                </tr>
+                <tr>
+                  <th>客船強盗</th>
+                  <td class="num">1時間</td>
+                </tr>
+                <tr>
+                  <th>ロックスインソックス宝石強盗</th>
+                  <td class="num">1時間</td>
+                </tr>
+                <tr>
+                  <th>ヒューメインラボ強盗</th>
+                  <td class="num">2時間</td>
+                </tr>
+                <tr>
+                  <th>飛行場襲撃</th>
+                  <td class="num">2時間</td>
+                </tr>
+                <tr>
+                  <th>アーティファクト強盗</th>
+                  <td class="num">2時間</td>
+                </tr>
+                <tr>
+                  <th>列車襲撃</th>
+                  <td class="num">2時間</td>
+                </tr>
+                <tr>
+                  <th>ユニオン強盗</th>
+                  <td class="num">2時間</td>
+                </tr>
+                <tr>
+                  <th>マザーシップ強盗</th>
+                  <td class="num">4時間</td>
+                </tr>
+                <tr>
+                  <th>押収車輸出</th>
+                  <td class="num">7日</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="callout info">
+            <strong>表にない犯罪:</strong>
+            犯罪の追加・変更がある場合はゲーム内の表示を優先し、クールタイムが不明なものは運営へ確認してください。
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
